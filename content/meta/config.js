@@ -1,23 +1,23 @@
 module.exports = {
-  siteTitle: "HeroBlog - a GatsbyJS starter", // <title>
-  shortSiteTitle: "HeroBlog - GatsbyJS starter", // <title> ending for posts and pages
-  siteDescription: "HeroBlog is a GatsbyJS starter.",
+  siteTitle: "일리윤", // <title>
+  shortSiteTitle: "아시아의 자연 에너지와 피부 과학의 시너지 - 일리윤", // <title> ending for posts and pages
+  siteDescription: "아시아의 좋은 원료에서 찾은 피부과학으로 피부 본연의 건강함(潤)을 되찾아주는 보습 전문 브랜드",
   siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com",
   // pathPrefix: "",
   siteImage: "preview.jpg",
-  siteLanguage: "en",
+  siteLanguage: "ko",
 
   /* author */
-  authorName: "greg lobinski",
-  authorTwitterAccount: "greglobinski",
+  authorName: "일리윤",
+  authorTwitterAccount: "아모레퍼시픽",
 
   /* info */
-  headerTitle: "greg lobinski",
-  headerSubTitle: "presents another one GatsbyJS starter",
+  headerTitle: "일리윤",
+  headerSubTitle: "아시아의 자연 에너지와 피부 과학의 시너지",
 
   /* manifest.json */
-  manifestName: "HeroBlog - a GatsbyJS starter",
-  manifestShortName: "HeroBlog", // max 12 characters
+  manifestName: "아시아의 자연 에너지와 피부 과학의 시너지 - 일리윤",
+  manifestShortName: "일리윤", // max 12 characters
   manifestStartUrl: "/index.html",
   manifestBackgroundColor: "white",
   manifestThemeColor: "#666",

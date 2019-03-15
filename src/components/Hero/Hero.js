@@ -10,7 +10,7 @@ const Hero = props => {
     <React.Fragment>
       <section className="hero">
         <h1>
-          This is a demo site of&nbsp;the <strong>heroBlog</strong> GatsbyJS starter
+          아시아의 좋은 원료에서 찾은 피부과학으로 피부 <strong>본연의 건강함</strong>을 되찾아주는 보습 전문 브랜드
         </h1>
         <button onClick={scrollToContent} aria-label="scroll">
           <FaArrowDown />
