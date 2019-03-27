@@ -1,8 +1,10 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { graphql } from "gatsby";
+require("core-js/fn/array/find");
+
+import Article from "../components/Article";
 import { ThemeContext } from "../layouts";
-import Headline from "../components/Article/Headline";
 import Seo from "../components/Seo";
 
 const AboutPage = props => {
@@ -18,13 +20,26 @@ const AboutPage = props => {
     <React.Fragment>
       <ThemeContext.Consumer>
         {theme => (
-          <header>
-            <Headline title="About" theme={theme} />
-          </header>
+          <Article theme={theme}>
+            <div className="icon">
+            </div>
+          </Article>
         )}
       </ThemeContext.Consumer>
 
       <Seo facebook={facebook} />
+
+      {/* --- STYLES --- */}
+      <style jsx>{`
+        .icon {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 20px;
+        }
+        .icon :global(svg) {
+          height: 30px;
+        }
+      `}</style>
     </React.Fragment>
   );
 };
@@ -40,6 +55,11 @@ export const query = graphql`
   query AboutQuery {
     site {
       siteMetadata {
+        algolia {
+          appId
+          searchOnlyApiKey
+          indexName
+        }
         facebook {
           appId
         }

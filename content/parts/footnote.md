@@ -2,9 +2,7 @@
 title: footnote
 ---
 
-* it's a demo site of the [gatsby-starter-hero-blog](https://github.com/greglobinski/gatsby-starter-hero-blog)
-* built by [greg lobinski](https://www.greglobinski.com)
-* Check [Front-end web development with Greg](https://dev.greglobinski.com)
-* delivered by [Netlify](https://www.netlify.com/)
-* photos by [unsplash.com](https://unsplash.com)
-* graphic by [pixabay.com](https://pixabay.com)
+* [서비스이용약관](http://www.beautypoint.co.kr/footer/agreement.do)
+* [개인정보처리방침](http://www.beautypoint.co.kr/footer/privacy.do?appYn=undefined&sessionKey=undefined)
+* [영상정보처리방침](http://www.apgroup.com/int/ko/misc/terms/cctv-policies-and-procedures.html)
+* [고객상담실](http://www.apgroup.com/int/ko/misc/customer-center/faq.html)
