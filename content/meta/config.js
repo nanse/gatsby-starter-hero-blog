@@ -2,7 +2,7 @@ module.exports = {
   siteTitle: "일리윤", // <title>
   shortSiteTitle: "일리윤", // <title> ending for posts and pages
   siteDescription: "아시아의 좋은 원료에서 찾은 피부과학으로 피부 본연의 건강함(潤)을 되찾아주는 보습 전문 브랜드",
-  siteUrl: "https://gatsby-starter-hero-blog.greglobinski.com",
+  siteUrl: "https://nanse.netlify.com",
   // pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "ko",

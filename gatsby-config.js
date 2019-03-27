@@ -1,6 +1,9 @@
 require("dotenv").config();
 const config = require("./content/meta/config");
 const transformer = require("./src/utils/algolia");
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 const query = `{
   allMarkdownRemark( filter: { fields: { slug: { ne: null } } }) {

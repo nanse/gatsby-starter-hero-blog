@@ -1,7 +1,6 @@
 ---
 title: 일리윤 브랜드 소개
-cover: illiyoon-ceramide-ato-lotion-cover.jpg
-author: 일리윤
+menuTitle: About
 ---
 
 ![일리윤 로고](./logo.png)
