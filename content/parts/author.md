@@ -2,4 +2,4 @@
 title: author
 ---
 
-**Mr. Gatsby** Proin ornare ligula eu tellus tempus elementum. Aenean [bibendum](/) iaculis mi, nec blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus. Blandit lacus interdum vitae. Vestibulum non nibh risus, a scelerisque purus.
+**일리윤(一理潤, Illiyoon)** 민감하고 건조한 피부를 가진 고객에게 순하면서 강한 보습 효과를 제공합니다. 한국의 헤리티지 성분에 아모레퍼시픽의 피부 과학 기술을 담아, 피부 표면이 아닌 피부 장벽부터 강화시켜 피부 스스로 촉촉함을 유지할 수 있도록 자습력(自濕力)을 키워줍니다. 하이포알러지, 민감성 패널 테스트를 거친 무향/미향의 마일드한 포뮬러가 선사하는 순하고 강력한 보습의 힘을 경험해보세요

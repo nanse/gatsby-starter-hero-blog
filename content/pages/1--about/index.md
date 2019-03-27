@@ -1,5 +1,7 @@
 ---
-title: About
+title: 일리윤 브랜드 소개
+cover: illiyoon-ceramide-ato-lotion-cover.jpg
+author: 일리윤
 ---
 
 This is a demo site of the [HeroBlog](https://github.com/greglobinski/gatsby-starter-hero-blog), a [GatsbyJS](https://www.gatsbyjs.org/) starter.

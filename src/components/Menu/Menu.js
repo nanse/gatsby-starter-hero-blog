@@ -24,12 +24,9 @@ class Menu extends React.Component {
 
     this.items = [
       { to: "/", label: "Home", icon: FaHome },
-      { to: "/about/", label: "브랜드 소개", icon: FaEnvelope },
-      { to: "/product/", label: "제품 소개", icon: FaEnvelope },
+      { to: "/about/", label: "일리윤 소개", icon: FaEnvelope },
+      { to: "/category/", label: "제픔 소개", icon: FaTag },
       { to: "/contact/", label: "Contact", icon: FaEnvelope },
-      { to: "/category/", label: "Categories", icon: FaTag },
-      { to: "/search/", label: "Search", icon: FaSearch },
-      { to: "/search/", label: "Search", icon: FaSearch },
       { to: "/search/", label: "Search", icon: FaSearch }
     ];
 
