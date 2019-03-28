@@ -73,16 +73,16 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: `gatsby-plugin-robots-txt`,
       options: {
-        host: 'https://nanse.netlify.com',
-        sitemap: 'https://nanse.netlify.com/sitemap.xml',
+        host: `https://nanse.netlify.com`,
+        sitemap: `https://nanse.netlify.com/sitemap.xml`,
         env: {
           development: {
-            policy: [{ userAgent: '*', disallow: ['/'] }]
+            policy: [{ userAgent: `*`, disallow: [`/`] }]
           },
           production: {
-            policy: [{ userAgent: '*', allow: '/' }]
+            policy: [{ userAgent: `*`, disallow: `/` }]
           }
         }
       }
