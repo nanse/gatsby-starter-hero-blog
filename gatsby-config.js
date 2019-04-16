@@ -77,7 +77,7 @@ module.exports = {
       options: {
         host: `https://nanse.netlify.com`,
         sitemap: `https://nanse.netlify.com/sitemap.xml`,
-        policy: [{ userAgent: `*`, disallow: `/` }]
+        policy: [{ userAgent: `*`, allow: `/` }]
       }
     },
     {
