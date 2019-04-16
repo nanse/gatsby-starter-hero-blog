@@ -31,9 +31,9 @@ const Item = props => {
           <div className="gatsby-image-outer-wrapper">
             <Img fluid={fluid} />
           </div>
-          <h1>
+          <h2>
             {title} <FaArrowRight className="arrow" />
-          </h1>
+          </h2>
           <p className="meta">
             <span>
               <FaCalendar size={18} /> {prefix}
@@ -103,7 +103,7 @@ const Item = props => {
           }
         }
 
-        h1 {
+        h2 {
           padding: ${theme.space.m} ${theme.space.s} 0;
           line-height: ${theme.blog.h1.lineHeight};
           font-size: ${theme.blog.h1.size};
@@ -157,7 +157,7 @@ const Item = props => {
             }
           }
 
-          h1 {
+          h2 {
             font-size: ${`calc(${theme.blog.h1.size} * 1.2)`};
             padding: ${`calc(${theme.space.default} * 1.5) ${theme.space.default} 0`};
             transition: all 0.5s;
@@ -188,7 +188,7 @@ const Item = props => {
           :global(.blogItemLink:first-child) > li::before {
             top: ${`calc(${theme.space.default} * -2.75)`};
           }
-          h1 {
+          h2 {
             font-size: 2.5em;
             padding: ${`calc(${theme.space.default} * 1.2) calc(${theme.space.default} * 2) 0`};
           }
@@ -210,7 +210,7 @@ const Item = props => {
               :global(.gatsby-image-wrapper) {
                 transform: scale(1.1);
               }
-              h1 {
+              h2 {
                 color: ${theme.blog.h1.hoverColor};
               }
               :global(.arrow) {

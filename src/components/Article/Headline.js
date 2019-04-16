@@ -6,11 +6,11 @@ const Headline = props => {
 
   return (
     <React.Fragment>
-      {title ? <h1>{title}</h1> : <h1>{children}</h1>}
+      {title ? <h2>{title}</h2> : <h2>{children}</h2>}
 
       {/* --- STYLES --- */}
       <style jsx>{`
-        h1 {
+        h2 {
           font-size: ${theme.font.size.xxl};
           margin: ${theme.space.stack.l};
           animation-name: headlineEntry;
@@ -40,13 +40,13 @@ const Headline = props => {
         }
 
         @from-width tablet {
-          h1 {
+          h2 {
             font-size: ${`calc(${theme.font.size.xl} * 1.2)`};
           }
         }
 
         @from-width desktop {
-          h1 {
+          h2 {
             font-size: ${`calc(${theme.font.size.xl} * 1.4)`};
           }
         }

@@ -44,8 +44,8 @@ class Header extends React.Component {
               />
             </div>
             <div className="type">
-              <h1>{config.headerTitle}</h1>
-              <h2>{config.headerSubTitle}</h2>
+              <p className="h1">{config.headerTitle}</p>
+              <p className="h2">{config.headerSubTitle}</p>
             </div>
           </Link>
           <FontLoadedContext.Consumer>
@@ -100,13 +100,13 @@ class Header extends React.Component {
             }
           }
 
-          h1 {
+          p.h1 {
             font-size: ${theme.font.size.m};
             font-weight: ${theme.font.weight.standard};
             margin: ${theme.space.stack.xs};
           }
 
-          h2 {
+          p.h2 {
             font-weight: ${theme.font.weight.standard};
             font-size: ${theme.font.size.xxs};
             letter-spacing: 0;

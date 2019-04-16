@@ -1,5 +1,6 @@
 ---
-title: 일리윤 세라마이드 아토 로션 350ml
+title: 산뜻 촉촉 빠르게 습수되는 일리윤 세라마이드 아토 로션 350ml
+description: 세라마이드 스킨 컴플레스™는 아모레퍼시픽과 에스트라가 공동 개발한 특허 성분입니다. 피부 장벽을 구성하는 세라마이드를 캡슐화하여, 유효 성분을 효율적으로 전달하고 흡수시켜 줍니다.
 category: "바디로션"
 cover: illiyoon-ceramide-ato-lotion-cover.jpg
 author: 일리윤
