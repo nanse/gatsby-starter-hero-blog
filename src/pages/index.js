@@ -2,16 +2,14 @@ import PropTypes from "prop-types";
 import React from "react";
 import { graphql } from "gatsby";
 import { ThemeContext } from "../layouts";
-import Blog from "../components/Blog";
+import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import Hero from "../components/Hero";
 import Seo from "../components/Seo";
 
+const url = (name, wrap = false) => `${wrap ? 'url(' : ''}https://awv3node-homepage.surge.sh/build/assets/${name}.svg${wrap ? ')' : ''}`
+
 class IndexPage extends React.Component {
   separator = React.createRef();
-
-  scrollToContent = e => {
-    this.separator.current.scrollIntoView({ block: "start", behavior: "smooth" });
-  };
 
   render() {
     const {
@@ -40,18 +38,96 @@ class IndexPage extends React.Component {
 
     return (
       <React.Fragment>
-        <ThemeContext.Consumer>
-          {theme => (
-            <Hero scrollToContent={this.scrollToContent} backgrounds={backgrounds} theme={theme} />
-          )}
-        </ThemeContext.Consumer>
+        <Parallax ref={ref => (this.parallax = ref)} pages={4}>
+          <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: "#999999", backgroundImage: `url(${backgrounds.desktop})`, backgroundSize: "cover", backgroundPosition: "center center" }} />
+          <ParallaxLayer offset={1} speed={1} style={{ backgroundColor: "#999999" }} />
+          <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: "#805E73" }} />
+          <ParallaxLayer offset={3} speed={1} style={{ backgroundColor: "#87BCDE" }} />
 
-        <hr ref={this.separator} />
+          <ParallaxLayer offset={2} speed={0} factor={3} style={{ backgroundImage: url("stars", true), backgroundSize: "cover" }} />
 
-        <ThemeContext.Consumer>
-          {theme => <Blog posts={posts} theme={theme} />}
-        </ThemeContext.Consumer>
+          <ParallaxLayer offset={2.3} speed={-0.3} style={{ pointerEvents: "none" }}>
+            <img src={url("satellite4")} style={{ width: "15%", marginLeft: "70%" }} />
+          </ParallaxLayer>
 
+          <ParallaxLayer offset={2} speed={0.8} style={{ opacity: 0.1 }}>
+            <img src={url("cloud")} style={{ display: "block", width: "20%", marginLeft: "55%" }} />
+            <img src={url("cloud")} style={{ display: "block", width: "10%", marginLeft: "15%" }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={2.75} speed={0.5} style={{ opacity: 0.1 }}>
+            <img src={url("cloud")} style={{ display: "block", width: "20%", marginLeft: "70%" }} />
+            <img src={url("cloud")} style={{ display: "block", width: "20%", marginLeft: "40%" }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={2} speed={0.2} style={{ opacity: 0.2 }}>
+            <img src={url("cloud")} style={{ display: "block", width: "10%", marginLeft: "10%" }} />
+            <img src={url("cloud")} style={{ display: "block", width: "20%", marginLeft: "75%" }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={2.6} speed={-0.1} style={{ opacity: 0.4 }}>
+            <img src={url("cloud")} style={{ display: "block", width: "20%", marginLeft: "60%" }} />
+            <img src={url("cloud")} style={{ display: "block", width: "25%", marginLeft: "30%" }} />
+            <img src={url("cloud")} style={{ display: "block", width: "10%", marginLeft: "80%" }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={3.6} speed={0.4} style={{ opacity: 0.6 }}>
+            <img src={url("cloud")} style={{ display: "block", width: "20%", marginLeft: "5%" }} />
+            <img src={url("cloud")} style={{ display: "block", width: "15%", marginLeft: "75%" }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={3.5} speed={-0.4} style={{ display: "flex", alignItems: "center", justifyContent: "center", pointerEvents: "none" }}>
+            <img src={url("earth")} style={{ width: "60%" }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer
+            offset={3}
+            speed={-0.3}
+            style={{
+              backgroundSize: "80%",
+              backgroundPosition: "center",
+              backgroundImage: url("clients", true)
+            }}
+          />
+
+          <ParallaxLayer
+            offset={0}
+            speed={0.1}
+            onClick={() => this.parallax.scrollTo(1)}
+            style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <ThemeContext.Consumer>
+              {theme => (
+                <Hero backgrounds={backgrounds} theme={theme} />
+              )}
+            </ThemeContext.Consumer>
+          </ParallaxLayer>
+
+          <hr ref={this.separator} />
+
+          <ParallaxLayer
+            offset={1}
+            speed={0.1}
+            onClick={() => this.parallax.scrollTo(2)}
+            style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <img src={url("server")} style={{ width: "20%" }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer
+            offset={2}
+            speed={0.1}
+            onClick={() => this.parallax.scrollTo(3)}
+            style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <img src={url("bash")} style={{ width: "40%" }} />
+          </ParallaxLayer>
+
+          <ParallaxLayer
+            offset={3}
+            speed={-0}
+            style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+            onClick={() => this.parallax.scrollTo(0)}>
+            <img src={url("clients-main")} style={{ width: "40%" }} />
+          </ParallaxLayer>
+        </Parallax>
         <Seo facebook={facebook} />
 
         <style jsx>{`

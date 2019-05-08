@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { FaArrowDown } from "react-icons/fa/";
 
 const Hero = props => {
-  const { scrollToContent, backgrounds, theme } = props;
+  const { theme } = props;
 
   return (
     <React.Fragment>
@@ -12,7 +12,7 @@ const Hero = props => {
         <h1>
           <strong>본연의 건강함</strong>을 되찾아주는 보습 전문 브랜드
         </h1>
-        <button onClick={scrollToContent} aria-label="scroll">
+        <button aria-label="scroll">
           <FaArrowDown />
         </button>
       </section>
@@ -21,8 +21,6 @@ const Hero = props => {
       <style jsx>{`
         .hero {
           align-items: center;
-          background: ${theme.hero.background};
-          background-image: url(${backgrounds.mobile});
           background-size: cover;
           color: ${theme.text.color.primary.inverse};
           display: flex;
@@ -99,10 +97,6 @@ const Hero = props => {
         }
 
         @from-width tablet {
-          .hero {
-            background-image: url(${backgrounds.tablet});
-          }
-
           h1 {
             max-width: 90%;
             font-size: ${`calc(${theme.hero.h1.size} * 1.3)`};
@@ -114,10 +108,6 @@ const Hero = props => {
         }
 
         @from-width desktop {
-          .hero {
-            background-image: url(${backgrounds.desktop});
-          }
-
           h1 {
             max-width: 80%;
             font-size: ${`calc(${theme.hero.h1.size} * 1.5)`};
@@ -133,8 +123,6 @@ const Hero = props => {
 };
 
 Hero.propTypes = {
-  scrollToContent: PropTypes.func.isRequired,
-  backgrounds: PropTypes.object.isRequired,
   theme: PropTypes.object.isRequired
 };
 
